@@ -10,7 +10,7 @@ Kernel: `solidcore` 1.0.1; supporting crates 0.1.0, Apache-2.0.
 
 The original Apache license, NOTICE, ATTRIBUTION and per-source provenance headers are preserved in the vendored tree and `Licenses/SolidCore/`. SolidCore ports NVIDIA USD BRep's SMLib / SM_API, v1.0.1 / commit `3fd5b95`, source https://github.com/NVIDIA-Omniverse/usd-brep. Only the five library crates are built.
 
-The vendored workspace Cargo.toml was restricted to those five crates and the unrelated goldens package profile entry was removed; a prominent modification notice is in that file. Kernel Rust source is unchanged. The public source candidate omits upstream fixture data/images. No SolidCraft application UI, renderer, theme, logo or brand asset is redistributed. References in source comments and attribution identify origin.
+The vendored workspace Cargo.toml was restricted to those five crates and the unrelated goldens package profile entry was removed; a prominent modification notice is in that file. Kernel Rust source is unchanged. The published source repository omits upstream fixture data/images. No SolidCraft application UI, renderer, theme, logo or brand asset is redistributed. References in source comments and attribution identify origin.
 
 The local C ABI bridge is independent integration code retaining its declared Apache-2.0 license (`Native/SolidCore/Bridge/LICENSE`). Phase 3 added offset/topology/validation APIs and a planar boundary guard; Phase 3.2 adds polygon conversion APIs and the separate MIT adapter; no upstream kernel Rust source is modified.
 
@@ -98,7 +98,7 @@ All alternative license texts are preserved for dual-licensed crates. `unicode-i
 
 ## Rust standard-library runtime
 
-The generated static library links Rust's standard library. The complete original Rust 1.99.1 standard-library copyright/third-party notice is retained as [`Licenses/Rust-1.99.1/COPYRIGHT-library.html`](Licenses/Rust-1.99.1/COPYRIGHT-library.html), with its referenced principal license texts and provenance. It is also bundled in the app as `RustStandardLibraryNotices.html`. The notice is an upstream superset covering multiple targets; inclusion is not a claim that every listed platform dependency is linked on visionOS. Rust toolchain binaries themselves are not part of the source candidate.
+The generated static library links Rust's standard library. The complete original Rust 1.99.1 standard-library copyright/third-party notice is retained as [`Licenses/Rust-1.99.1/COPYRIGHT-library.html`](Licenses/Rust-1.99.1/COPYRIGHT-library.html), with its referenced principal license texts and provenance. It is also bundled in the app as `RustStandardLibraryNotices.html`. The notice is an upstream superset covering multiple targets; inclusion is not a claim that every listed platform dependency is linked on visionOS. Rust toolchain binaries themselves are not part of the source repository.
 
 Rust's standard-library notice states Apache-2.0 OR MIT generally, with exceptions identified in that original notice, including Unicode data. Keep the complete notice when distributing rebuilt binaries. Apple system frameworks and the SDK are platform-provided and are not redistributed by this repository.
 

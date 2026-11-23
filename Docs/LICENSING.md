@@ -1,10 +1,10 @@
 # License scope and audit
 
-The owner approved MIT for the original application and the following copyright notice:
+The original application is distributed under the MIT License with the following copyright notice:
 
 **Copyright (c) 2026 Design Studio Butterfly Effect**
 
-Design Studio Butterfly Effect (DSBE) leads development and publication of Spatial Modeling. The root `LICENSE` applies to original Swift application code, project scripts, tests and documentation. Source headers identify this scope. The approval covers the license only; it does not authorize commits, pushes or GitHub publication.
+Design Studio Butterfly Effect (DSBE) leads development and publication of Spatial Modeling. The root `LICENSE` applies to original Swift application code, project scripts, tests and documentation. Source headers identify this scope. These are the published license terms; they do not replace the independently retained third-party terms below.
 
 The original Rust `spatial-mesh-cad` conversion crate in `Native/SolidCore/Conversion/` is also DSBE MIT code with its own license copy. It introduces no new external dependency.
 
@@ -22,6 +22,6 @@ The original Rust `spatial-mesh-cad` conversion crate in `Native/SolidCore/Conve
 
 Apache-2.0 source/object redistribution requires its license, applicable notices/attribution and prominent change notices on modified files. MIT requires retaining its copyright and permission text. Zlib requires accurate origin and change marking; Unicode-3.0 requires its notices. The package preserves all original alternative texts rather than silently deleting license options.
 
-The public candidate excludes prebuilt native archives, upstream binary fixtures/test images, personal signing settings, caches and internal evidence. The reviewed dependencies' retained terms permit this source packaging with the independent app under MIT. Future dependencies and binary-release packaging require a fresh audit.
+The published source repository excludes prebuilt native archives, upstream binary fixtures/test images, personal signing settings, caches and internal evidence. The reviewed dependencies' retained terms permit this source packaging with the independent app under MIT. Future dependencies and binary-release packaging require a fresh audit.
 
 Original reference texts: [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0), [MIT](https://opensource.org/license/mit). See the bundled originals and `THIRD_PARTY_NOTICES.md` for component-specific terms.

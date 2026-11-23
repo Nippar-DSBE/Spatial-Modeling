@@ -4,7 +4,7 @@
 
 Developed and maintained by **Design Studio Butterfly Effect (DSBE)**.
 
-Planned repository: [Nippar-DSBE/Spatial-Modeling](https://github.com/Nippar-DSBE/Spatial-Modeling). 
+Repository: [Nippar-DSBE/Spatial-Modeling](https://github.com/Nippar-DSBE/Spatial-Modeling) · [v0.1.0 Release](https://github.com/Nippar-DSBE/Spatial-Modeling/releases/tag/v0.1.0).
 
 ## Overview
 
@@ -36,7 +36,15 @@ https://github.com/user-attachments/assets/19affeeb-1af6-4fb2-a602-575a23891cde
 - Source-preserving explicit conversion, with confirmation before replacing an existing destination.
 - One history entry per drag or scale-slider interaction; up to 100 Mesh actions and 32 CAD actions.
 - Revision checks, stale-result rejection and rollback on invalid CAD reconstruction.
-- All modeling works locally without a network connection.
+- Modeling engines execute on-device without a runtime network dependency. Offline-operation regression is listed separately in the device checklist.
+
+### Verification status
+
+The following are **owner-reported Vision Pro checks, recorded on 2026-11-23**: Mesh Vertex/Edge/Face editing; CAD Vertex/Edge editing with committed B-rep reconstruction; Face Push / Pull; Mesh → CAD and CAD → Mesh conversion; Object move/rotation; two-hand and slider scaling; Undo/Redo; and Mesh/CAD mode switching.
+
+**Boolean Cut runs on device, but whether the resulting shape matches the intended cut remains under validation, including cuts after deformation.** Earlier owner-reported timings of approximately 5.4 ms for Boolean and 0.33 ms for LowLevelMesh updating are reference observations, not performance guarantees or evidence of Boolean shape correctness.
+
+Rust/macOS host tests and unsigned visionOS device-target builds were checked separately. Long-duration stability, detailed performance and the unconfirmed edge cases in [Device testing](Docs/DEVICE_TESTING.md) remain unverified. The demo above is not a complete regression-test record.
 
 ## Architecture
 
@@ -70,7 +78,7 @@ Planar polygon faces are preserved. Only polygons made nonplanar by deformation 
 
 Explicit **Convert to CAD** / **Convert to Mesh** actions preserve the source. Existing destinations require confirmation. Geometry and display pose replacement can be undone; normal mode switching does not convert anything.
 
-Initial conversion/hybrid scope: **one closed planar solid with straight edges, one shell and one simple loop per face**. Curved geometry, face holes and internal cavities are not supported. The welding/planarity tolerance is **0.0001 mm**. Rust CAD arithmetic uses f64; Swift Mesh editing uses Float, so general round trips are not exact. See [Hybrid modeling](Docs/HYBRID_MODELING.md).
+Current conversion/hybrid scope: **one closed planar solid with straight edges, one shell and one simple loop per face**. Curved geometry, face holes and internal cavities are not supported. The welding/planarity tolerance is **0.0001 mm**. Rust CAD arithmetic uses f64; Swift Mesh editing uses Float, so general round trips are not exact. See [Hybrid modeling](Docs/HYBRID_MODELING.md).
 
 ## On-device CAD Computing
 
@@ -135,15 +143,15 @@ zsh Scripts/check-hybrid-conversion.sh
 python3 Scripts/audit-licenses.py
 ```
 
-Host integration tests use actual Rust CAD operations and macOS RealityKit. They do not establish visionOS gesture quality. See the [Vision Pro checklist](Docs/DEVICE_TESTING.md). The local candidate audit is `python3 Scripts/audit-release.py` after explicitly preparing a candidate; internal audit reports and staging are excluded from publication.
+The recorded host integration tests use actual Rust CAD operations and macOS RealityKit. They do not establish visionOS gesture quality; owner device observations are recorded separately above. See the [Vision Pro checklist](Docs/DEVICE_TESTING.md). The local candidate audit is `python3 Scripts/audit-release.py` after explicitly preparing a candidate; internal audit reports and staging are excluded from publication.
 
 ## Current Limitations
 
 - Early, session-only prototype: one object per mode, no persistent project save or file import/export. **STL export is not included in v0.1.0.**
 - Hybrid editing/conversion is experimental and limited to simple closed planar solids: 4–256 input vertices, 4–512 faces, at most 128 corners per face. Curves, face holes, internal cavities and dense generated/imported meshes are unsupported.
-- Large deformations, self-intersections, degeneracies, near contact, unsupported topology or kernel refusals reject the operation and preserve the previous formal Body. Reconstructed topology and subentity IDs can change.
-- CAD Face Push / Pull currently uses planar normal offsets, tested with the generated box, its fixed cut and selected reconstructed polyhedra. Extrude, Fillet, Chamfer, Shell and numeric CAD dimension editing are not exposed.
-- CAD face previews coalesce requests with a 30 Hz ceiling. Vertex/Edge previews are lightweight Mesh updates with reconstruction on release. Hardware latency, hand tracking and two-hand behavior require device testing; no frame-rate guarantee is made.
+- Results detected as invalid or unsupported are rejected, preserving the previous formal Body. Large deformations and near-contact cases may be refused; the checks are not a guarantee for every input. Reconstructed topology and subentity IDs can change. Face indices are snapshot-local; persistent face naming across reconstruction or Boolean operations is not implemented.
+- CAD Face Push / Pull currently uses planar normal offsets. Host tests cover the generated box, its fixed cut and selected reconstructed polyhedra; the owner separately confirmed basic Push / Pull on Vision Pro. Boolean result correctness on device remains under validation. Extrude, Fillet, Chamfer, Shell and numeric CAD dimension editing are not exposed.
+- CAD face previews coalesce requests with a 30 Hz ceiling. Vertex/Edge previews are lightweight Mesh updates with reconstruction on release. Basic two-hand scaling is owner-confirmed on Vision Pro; combined-gesture transitions, tracking-loss recovery and detailed latency remain unverified. No frame-rate guarantee is made.
 - Object picking uses a bounding-box collision proxy, including empty space within a cutout. Display Scale is not a CAD Scale Body operation.
 - Histories are in memory. Display poses survive mode/space switching within a session, but no persistent world anchor or collaboration is implemented.
 - Upstream binary fixtures/images are omitted from this source package. App/bridge tests and library builds are supported; full upstream fixture suites need the original upstream checkout.
@@ -153,6 +161,7 @@ Host integration tests use actual Rust CAD operations and macOS RealityKit. They
 Planned, not implemented:
 
 - GLB Import / Export
+- STL Export / 3D Printing
 - Dynamic Mesh Topology
 - Tripo API Integration
 - Advanced CAD Direct Modeling
@@ -161,7 +170,7 @@ Planned, not implemented:
 - SharePlay Collaborative Modeling
 - Voice-controlled AI Modeling Assistant
 
-Screenshots and demo videos can be added under [Docs/Media](Docs/Media/README.md) after review. No third-party branding or UI assets are bundled.
+The owner-added demo is linked in the [Demo](#demo) section above. See [Media notes](Docs/Media/README.md) for preserving that link and adding further media. No third-party branding or UI assets are bundled.
 
 ## License
 

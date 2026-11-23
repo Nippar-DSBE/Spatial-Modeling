@@ -4,13 +4,20 @@
 
 Developed and maintained by **Design Studio Butterfly Effect (DSBE)**.
 
-Planned repository: [Nippar-DSBE/Spatial-Modeling](https://github.com/Nippar-DSBE/Spatial-Modeling). Repository creation and publication are pending owner approval.
+Planned repository: [Nippar-DSBE/Spatial-Modeling](https://github.com/Nippar-DSBE/Spatial-Modeling). 
 
 ## Overview
 
 Spatial Modeling is an open-source spatial 3D modeler built natively for visionOS. It combines free polygon-mesh editing with on-device SolidCore CAD operations in one SwiftUI control window and one mixed ImmersiveSpace.
 
 Version **v0.1.0** is an early prototype for simple polyhedra. Mesh Mode and CAD Mode keep independent shapes, selections, histories and display transforms. Switching modes preserves both sessions and does not automatically convert geometry.
+
+## Demo
+
+
+https://github.com/user-attachments/assets/19affeeb-1af6-4fb2-a602-575a23891cde
+
+
 
 ## Features
 

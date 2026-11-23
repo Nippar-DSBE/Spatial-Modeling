@@ -1,0 +1,16 @@
+[package]
+name = "solidcore-probe-bridge"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+[lib]
+name = "solidcore_probe"
+crate-type = ["staticlib", "rlib"]
+[dependencies]
+solidcore = { path = "../Vendor/SolidCore/crates/solidcore" }
+solidcore-record = { path = "../Vendor/SolidCore/crates/solidcore-record" }
+solidcore-convert = { path = "../Vendor/SolidCore/crates/solidcore-convert" }
+solidcore-ops = { path = "../Vendor/SolidCore/crates/solidcore-ops" }
+solidcore-tess = { path = "../Vendor/SolidCore/crates/solidcore-tess" }
+rayon = "1.12"
+spatial-mesh-cad = { path = "../Conversion" }

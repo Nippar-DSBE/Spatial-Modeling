@@ -1,0 +1,2 @@
+// Optional per-developer signing settings. Never commit Signing.local.xcconfig.
+#include? "Signing.local.xcconfig"

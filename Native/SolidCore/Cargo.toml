@@ -1,0 +1,17 @@
+[workspace]
+members = ["Bridge", "Conversion"]
+exclude = ["Vendor/SolidCore"]
+resolver = "3"
+[profile.dev]
+opt-level = 1
+debug = 0
+incremental = false
+codegen-units = 256
+panic = "unwind"
+[profile.release]
+opt-level = 1
+debug = 0
+incremental = false
+codegen-units = 256
+lto = false
+panic = "unwind"

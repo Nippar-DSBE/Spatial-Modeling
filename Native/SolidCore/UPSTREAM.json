@@ -1,0 +1,28 @@
+{
+  "solidcore_commit": "d856327183691d55941b3abe3fb184583bfb6975",
+  "solidcraft_commit": "a6859ee0cd92775d3e03d6b19270e6143e46619f",
+  "tree": "e5c6bba26fab6a0bd17ff1e90a5329c74a64d902",
+  "source": "https://github.com/tangency-labs/solidcore",
+  "vendored_crates": [
+    "solidcore",
+    "solidcore-record",
+    "solidcore-convert",
+    "solidcore-ops",
+    "solidcore-tess"
+  ],
+  "source_changes": [],
+  "packaging_changes": [
+    "Vendor/SolidCore/Cargo.toml workspace members reduced to the five crates; unrelated goldens package profile omitted. Rust source and per-crate manifests unchanged."
+  ],
+  "rust": "1.99.1",
+  "xcode": "27.0 (27A266a)",
+  "sdk": "visionOS 27.0 and visionOS Simulator 27.0",
+  "targets": [
+    "aarch64-apple-visionos"
+  ],
+  "excluded_targets": [
+    "aarch64-apple-visionos-sim"
+  ],
+  "storage_policy": "Device-only; never download Simulator runtime or SDK. Dedicated Rust simulator std installed before scope change was removed.",
+  "bridge_configuration": "All UpstreamFixes enabled, matching the investigated SolidCraft kernel policy; Rust worker 8 MiB stack; tessellation pool capped to 2 threads."
+}

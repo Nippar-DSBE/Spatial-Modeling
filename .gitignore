@@ -1,0 +1,44 @@
+# Private local evidence and export staging
+/Artifacts/
+/ReleaseCandidate/
+/Backups/
+*.tar
+*.tar.gz
+*.zip
+.DS_Store
+# Reproducible build products (source-only repository)
+/.build/
+/target/
+**/target/
+/DerivedData/
+/Frameworks/*.xcframework/
+*.o
+*.a
+*.dSYM/
+*.ipa
+*.app/
+# Xcode per-user settings and signing credentials
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xcuserdatad/
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.pfx
+*.cer
+*.pem
+*.key
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.local.xcconfig
+# Python cache
+__pycache__/
+*.pyc
+
+# Historical local reports contain machine-specific paths
+/Docs/PoC-v0.1.md
+/Docs/Phase2-Mesh-CAD-Integration.md
+/Docs/Phase3-CAD-Direct-Modeling.md

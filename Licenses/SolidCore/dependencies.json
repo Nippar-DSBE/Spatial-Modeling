@@ -1,0 +1,332 @@
+[
+  {
+    "name": "allocator-api2",
+    "version": "0.2.21",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/zakarumych/allocator-api2",
+    "license_files": [
+      "Licenses/SolidCore/allocator-api2-0.2.21/LICENSE-APACHE",
+      "Licenses/SolidCore/allocator-api2-0.2.21/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "autocfg",
+    "version": "1.5.1",
+    "license": "Apache-2.0 OR MIT",
+    "repository": "https://github.com/cuviper/autocfg",
+    "license_files": [
+      "Licenses/SolidCore/autocfg-1.5.1/LICENSE-APACHE",
+      "Licenses/SolidCore/autocfg-1.5.1/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "crossbeam-deque",
+    "version": "0.8.8",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/crossbeam-rs/crossbeam",
+    "license_files": [
+      "Licenses/SolidCore/crossbeam-deque-0.8.8/LICENSE-APACHE",
+      "Licenses/SolidCore/crossbeam-deque-0.8.8/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "crossbeam-epoch",
+    "version": "0.9.21",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/crossbeam-rs/crossbeam",
+    "license_files": [
+      "Licenses/SolidCore/crossbeam-epoch-0.9.21/LICENSE-APACHE",
+      "Licenses/SolidCore/crossbeam-epoch-0.9.21/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "crossbeam-utils",
+    "version": "0.8.23",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/crossbeam-rs/crossbeam",
+    "license_files": [
+      "Licenses/SolidCore/crossbeam-utils-0.8.23/LICENSE-APACHE",
+      "Licenses/SolidCore/crossbeam-utils-0.8.23/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "either",
+    "version": "1.19.0",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/rayon-rs/either",
+    "license_files": [
+      "Licenses/SolidCore/either-1.19.0/LICENSE-APACHE",
+      "Licenses/SolidCore/either-1.19.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "equivalent",
+    "version": "1.0.3",
+    "license": "Apache-2.0 OR MIT",
+    "repository": "https://github.com/indexmap-rs/equivalent",
+    "license_files": [
+      "Licenses/SolidCore/equivalent-1.0.3/LICENSE-APACHE",
+      "Licenses/SolidCore/equivalent-1.0.3/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "foldhash",
+    "version": "0.2.0",
+    "license": "Zlib",
+    "repository": "https://github.com/orlp/foldhash",
+    "license_files": [
+      "Licenses/SolidCore/foldhash-0.2.0/LICENSE"
+    ]
+  },
+  {
+    "name": "hashbrown",
+    "version": "0.16.1",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/rust-lang/hashbrown",
+    "license_files": [
+      "Licenses/SolidCore/hashbrown-0.16.1/LICENSE-APACHE",
+      "Licenses/SolidCore/hashbrown-0.16.1/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "itoa",
+    "version": "1.0.19",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/dtolnay/itoa",
+    "license_files": [
+      "Licenses/SolidCore/itoa-1.0.19/LICENSE-APACHE",
+      "Licenses/SolidCore/itoa-1.0.19/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "memchr",
+    "version": "2.8.3",
+    "license": "Unlicense OR MIT",
+    "repository": "https://github.com/BurntSushi/memchr",
+    "license_files": [
+      "Licenses/SolidCore/memchr-2.8.3/COPYING",
+      "Licenses/SolidCore/memchr-2.8.3/LICENSE-MIT",
+      "Licenses/SolidCore/memchr-2.8.3/UNLICENSE"
+    ]
+  },
+  {
+    "name": "num-traits",
+    "version": "0.2.19",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/rust-num/num-traits",
+    "license_files": [
+      "Licenses/SolidCore/num-traits-0.2.19/LICENSE-APACHE",
+      "Licenses/SolidCore/num-traits-0.2.19/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "proc-macro2",
+    "version": "1.0.107",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/dtolnay/proc-macro2",
+    "license_files": [
+      "Licenses/SolidCore/proc-macro2-1.0.107/LICENSE-APACHE",
+      "Licenses/SolidCore/proc-macro2-1.0.107/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "quote",
+    "version": "1.0.47",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/dtolnay/quote",
+    "license_files": [
+      "Licenses/SolidCore/quote-1.0.47/LICENSE-APACHE",
+      "Licenses/SolidCore/quote-1.0.47/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "rayon",
+    "version": "1.12.0",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/rayon-rs/rayon",
+    "license_files": [
+      "Licenses/SolidCore/rayon-1.12.0/LICENSE-APACHE",
+      "Licenses/SolidCore/rayon-1.12.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "rayon-core",
+    "version": "1.13.0",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/rayon-rs/rayon",
+    "license_files": [
+      "Licenses/SolidCore/rayon-core-1.13.0/LICENSE-APACHE",
+      "Licenses/SolidCore/rayon-core-1.13.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "robust",
+    "version": "1.2.0",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/georust/robust",
+    "license_files": [
+      "Licenses/SolidCore/robust-1.2.0/LICENSE-APACHE",
+      "Licenses/SolidCore/robust-1.2.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/serde-rs/serde",
+    "license_files": [
+      "Licenses/SolidCore/serde-1.0.229/LICENSE-APACHE",
+      "Licenses/SolidCore/serde-1.0.229/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde_core",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/serde-rs/serde",
+    "license_files": [
+      "Licenses/SolidCore/serde_core-1.0.229/LICENSE-APACHE",
+      "Licenses/SolidCore/serde_core-1.0.229/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde_derive",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/serde-rs/serde",
+    "license_files": [
+      "Licenses/SolidCore/serde_derive-1.0.229/LICENSE-APACHE",
+      "Licenses/SolidCore/serde_derive-1.0.229/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde_json",
+    "version": "1.0.154",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/serde-rs/json",
+    "license_files": [
+      "Licenses/SolidCore/serde_json-1.0.154/LICENSE-APACHE",
+      "Licenses/SolidCore/serde_json-1.0.154/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "smallvec",
+    "version": "1.16.6",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/smallvec/smallvec",
+    "license_files": [
+      "Licenses/SolidCore/smallvec-1.16.6/LICENSE-APACHE",
+      "Licenses/SolidCore/smallvec-1.16.6/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "solidcore",
+    "version": "1.0.1",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/tangency-labs/solidcore",
+    "license_files": [
+      "Licenses/SolidCore/solidcore-1.0.1/LICENSE",
+      "Licenses/SolidCore/solidcore-1.0.1/NOTICE"
+    ]
+  },
+  {
+    "name": "solidcore-convert",
+    "version": "0.1.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/tangency-labs/solidcore",
+    "license_files": [
+      "Licenses/SolidCore/SolidCore-LICENSE",
+      "Licenses/SolidCore/SolidCore-NOTICE"
+    ]
+  },
+  {
+    "name": "solidcore-ops",
+    "version": "0.1.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/tangency-labs/solidcore",
+    "license_files": [
+      "Licenses/SolidCore/SolidCore-LICENSE",
+      "Licenses/SolidCore/SolidCore-NOTICE"
+    ]
+  },
+  {
+    "name": "solidcore-record",
+    "version": "0.1.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/tangency-labs/solidcore",
+    "license_files": [
+      "Licenses/SolidCore/SolidCore-LICENSE",
+      "Licenses/SolidCore/SolidCore-NOTICE"
+    ]
+  },
+  {
+    "name": "solidcore-tess",
+    "version": "0.1.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/tangency-labs/solidcore",
+    "license_files": [
+      "Licenses/SolidCore/SolidCore-LICENSE",
+      "Licenses/SolidCore/SolidCore-NOTICE"
+    ]
+  },
+  {
+    "name": "spade",
+    "version": "2.15.1",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/Stoeoef/spade",
+    "license_files": [
+      "Licenses/SolidCore/spade-2.15.1/LICENSE-APACHE",
+      "Licenses/SolidCore/spade-2.15.1/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "syn",
+    "version": "3.0.10",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/dtolnay/syn",
+    "license_files": [
+      "Licenses/SolidCore/syn-3.0.10/LICENSE-APACHE",
+      "Licenses/SolidCore/syn-3.0.10/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "thiserror",
+    "version": "2.0.21",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/dtolnay/thiserror",
+    "license_files": [
+      "Licenses/SolidCore/thiserror-2.0.21/LICENSE-APACHE",
+      "Licenses/SolidCore/thiserror-2.0.21/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "thiserror-impl",
+    "version": "2.0.21",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/dtolnay/thiserror",
+    "license_files": [
+      "Licenses/SolidCore/thiserror-impl-2.0.21/LICENSE-APACHE",
+      "Licenses/SolidCore/thiserror-impl-2.0.21/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "unicode-ident",
+    "version": "1.0.27",
+    "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+    "repository": "https://github.com/dtolnay/unicode-ident",
+    "license_files": [
+      "Licenses/SolidCore/unicode-ident-1.0.27/LICENSE-APACHE",
+      "Licenses/SolidCore/unicode-ident-1.0.27/LICENSE-MIT",
+      "Licenses/SolidCore/unicode-ident-1.0.27/LICENSE-UNICODE"
+    ]
+  },
+  {
+    "name": "zmij",
+    "version": "1.0.23",
+    "license": "MIT",
+    "repository": "https://github.com/dtolnay/zmij",
+    "license_files": [
+      "Licenses/SolidCore/zmij-1.0.23/LICENSE-MIT"
+    ]
+  }
+]

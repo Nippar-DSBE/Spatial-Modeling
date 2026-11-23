@@ -1,0 +1,22 @@
+{
+  "phase": "3.2",
+  "date": "2026-11-23",
+  "solidcore_commit": "d856327183691d55941b3abe3fb184583bfb6975",
+  "observed_upstream_head": "5df27fb7c09dc9dfa9e7ab702e7e72bea09237b6",
+  "upstream_changes_applied": false,
+  "rust": "1.99.1",
+  "sdk": "visionOS 27.0",
+  "target": "aarch64-apple-visionos",
+  "conversion_crate": {
+    "name": "spatial-mesh-cad",
+    "license": "MIT",
+    "copyright": "2026 Design Studio Butterfly Effect",
+    "source_sha256": "5556747f20162b3e48480abac7574e97b2584939a7a71692a6c9bab9270a2598",
+    "tolerance_mm": 0.0001
+  },
+  "bridge_license": "Apache-2.0",
+  "static_library_sha256": "c5c2e958c5e7e30840913d2d9a9d1e4908e6a142943e065beef9fc9cf0cd9025",
+  "new_external_dependencies": [],
+  "hardware_validation": "pending owner review",
+  "release_candidate_updated": false
+}

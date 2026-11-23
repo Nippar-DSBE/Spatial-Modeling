@@ -1,0 +1,8 @@
+[package]
+name = "spatial-mesh-cad"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+[dependencies]
+solidcore-record = { path = "../Vendor/SolidCore/crates/solidcore-record" }
+solidcore-ops = { path = "../Vendor/SolidCore/crates/solidcore-ops" }

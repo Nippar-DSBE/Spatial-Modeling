@@ -1,0 +1,22 @@
+{
+  "upstream_commit": "d856327183691d55941b3abe3fb184583bfb6975",
+  "rust": "1.99.1",
+  "xcode": "27.0 (27A266a)",
+  "sdk": "visionOS 27.0",
+  "target": "aarch64-apple-visionos",
+  "upstream_source_changes": [],
+  "local_bridge_changes": [
+    "signed planar face offset using copy_with_order + offset_faces",
+    "B-rep topology ABI",
+    "closed/geometry validation + conservative planar boundary guard"
+  ],
+  "framework_sha256": "3fffa984a36b5176635e06c5e104caaafcf5bbccead0d588cfed9653d31bccff",
+  "cargo_lock_sha256": "70179bad68a2c181f108dd90ccef78399415aba84e68e75d66b815328294cc7c",
+  "bridge_sources": {
+    "Native/SolidCore/Bridge/Cargo.toml": "c588931cf1c80544f4c23c145f741e0f7738adb07915fb0bb3d1dd89f50cf4e6",
+    "Native/SolidCore/Bridge/include/SolidCoreProbe.h": "e86e1704be611a64e3c5b5050152f1657f6d1dfeeb96940b839c423ddd0b08b1",
+    "Native/SolidCore/Bridge/include/module.modulemap": "d20efdc48a59374192ee1ef792b4479dbceb87e040627264e06648d1a65827cb",
+    "Native/SolidCore/Bridge/src/planar_guard.rs": "436be1cda1b82615c991ebd4ad39f9c6a22d33715a86dd4af49aabd92229b240",
+    "Native/SolidCore/Bridge/src/lib.rs": "54dcaccdb2ee08f12d7f82d63e4d23b7bd0a0b942c6b98d9e7eca946df57e026"
+  }
+}
